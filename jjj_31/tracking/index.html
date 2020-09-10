@@ -1,0 +1,78 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+<head>
+    <! -- Заголовок страницы в браузере -->
+    <title>Tracking</title>
+    <!-- Кодировка страницы -->
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+</head>
+<!-- Отображаемое тело страницы -->
+<body>
+
+	<div class="MainInfo">
+	
+		<img style="float: left;" class="MainInfoImage" src="img/truck.png" alt="">
+		
+		<p>
+			<b>Посылка в пути {количество} {дня/дней}</b>
+		</p>
+		<p>
+			Последняя информация о местоположении получена {дд.мм}.
+		</p>
+		<p>
+			Доставка вашей посылки запланирована на {дд.мм}, курьер дополнительно свяжется с вами для уточнения деталей.
+		</p>
+	</div>
+<div>
+		<ul class="GeoInfo" style="float: left;">
+			<li>{дд.мм}<span>{Статус заказа}</span><br>{время}<span>{город}</span></li>
+			<li>{дд.мм}<span>{Статус заказа}</span><br>{время}<span>{город}</span></li>
+			<li>{дд.мм}<span>{Статус заказа}</span><br>{время}<span>{город}</span></li>
+			<li>{дд.мм}<span>{Статус заказа}</span><br>{время}<span>{город}</span></li>
+			<li>{дд.мм}<span>{Статус заказа}</span><br>{время}<span>{город}</span></li>
+			<li>{дд.мм}<span>{Статус заказа}</span><br>{время}<span>{город}</span></li>
+			<li>{дд.мм}<span>{Статус заказа}</span><br>{время}<span>{город}</span></li>
+			<li>{дд.мм}<span>{Статус заказа}</span><br>{время}<span>{город}</span></li>
+			<li>{дд.мм}<span>{Статус заказа}</span><br>{время}<span>{город}</span></li>
+			<li>{дд.мм}<span>{Статус заказа}</span><br>{время}<span>{город}</span></li>
+			<li>{дд.мм}<span>{Статус заказа}</span><br>{время}<span>{город}</span></li>
+			<li>{дд.мм}<span>{Статус заказа}</span><br>{время}<span>{город}</span></li>
+			<li>{дд.мм}<span>{Статус заказа}</span><br>{время}<span>{город}</span></li>
+		</ul>
+</div>
+
+	<div style="float: right;" class="Paremetres">	
+		<p>
+			<b>Услуга</b><br>
+				{Тариф} {доставка до (адреса/пункта выдачи)}
+			</p>	
+
+		<p>
+			<b>Габариты:</b><br>
+				<span>{вес}; {объем}</span>
+		</p>
+
+		<p>
+			<b>Место получения</b><br>
+				<span>{город доставки}</span>
+			</p>
+		</div>
+
+	<div style="float: left;" class="TransCompany">
+			
+			<p>Кто доставляет отправление</p>
+
+			<p>Посылка доставляется следующими почтовыми службами:</p>
+
+	<img style="float: left;" class="TransCompanyEmblem" src="img/truck.png" alt="">
+
+	<p>{Название ТК}</p>
+	<p>{Краткое описание}</p>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+/*Меняет подсчет ширины блока для удобной верстки, иначе - изменение алгоритма расчета ширины и высоты элемента*/
+/*используется для всех элементов страницы*/
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+/*Линия обводки у некоторых браузеров*/
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+/*перечисляем некоторые теги и добавляем значение блок, что делает их блочными*/
+nav,footer,header,aside{display: block;}
+/*Уравнивают поведение шрифтов элементов для разных браузеров и запрещает самовольное увеличение шрифта например на айфонах*/
+html,body{height: 100%;width: 100%;font-size: 100%;line-height: 1;font-size: 14px;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+/*Наследуем семейство шрифта, так как по умолчанию эти теги не наследуют семейство шрифта*/
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;} /* убираем крестик в input, лишние отступы в firefox некоторых кнопок, чистятся стили маркированных списков*/
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+body{
+
+	padding: 20px;
+
+}
+
+.MainInfo{
+	display: block;
+	max-width: 100%;
+	height: auto;
+	border: 1px solid rgba(115, 189, 230, 0.1);
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px 1px rgba(115, 189, 230, 0.3);
+	background-color: rgba(115, 189, 230, 0.2);
+	padding: 30px 30px 30px 30px;
+	margin: 20px 20px;
+	font-size: 28px;
+	line-height: 30px;
+	color: #000;
+
+}
+
+.MainInfoImage{
+	
+	margin-left: 20px;
+	margin-right: 10px;
+	width: 110px;
+	height: 110px;
+	margin-bottom: 20px;
+
+}
+	
+.GeoInfo{
+	display: block;
+	height: auto;
+	line-height: 30px;
+	width: 63%;
+	max-width: 100%;
+	height: auto;
+	padding: 20px 30px 30px 0px;
+	margin: 20px 20px;
+	font-size: 22px;
+	line-height: 100%;
+	color: #000;
+	position: absolute;
+
+}
+
+.GeoInfo li:nth-child(odd){
+	width: 100%;
+	border: 1px solid rgba(115, 189, 230, 0.1);
+	background-color: rgba(115, 189, 230, 0.1);
+	box-shadow: 2px 2px 2px 1px rgba(115, 189, 230, 0.2);
+	padding: 5px 5px 5px 5px;
+	margin: 3px;
+
+}
+
+.GeoInfo li:nth-child(even){
+	width: 100%;
+	padding: 5px 5px 5px 5px;
+	margin: 3px;
+	
+}
+
+.Paremetres{
+	display: block;
+	max-width: 100%;
+	height: auto;
+	border: 1px solid rgba(115, 189, 230, 0.1);
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px 1px rgba(115, 189, 230, 0.3);
+	background-color: rgba(115, 189, 230, 0.2);
+	border-bottom: 100px;
+	padding: 0px 30px 0px 0px;
+	border-bottom: ;
+	margin: 42px;
+	font-size: 19px;
+	position: absolute;
+	left: 70%;
+	
+}
+
+.Paremetres p{
+	margin: 3px;
+	padding: 10px;
+	width: 100%;
+	line-height: 25px;
+
+}
+
+.TransCompany{
+	display: block;
+	max-width: 100%;
+	height: auto;
+	border: 1px solid rgba(115, 189, 230, 0.1);
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px 1px rgba(115, 189, 230, 0.3);
+	background-color: rgba(115, 189, 230, 0.2);
+	padding: 30px 30px 20px 30px;
+	margin: 20px;
+	font-size: 28px;
+	line-height: 50px;
+	color: #000;
+	position: absolute;
+	bottom: -50%;
+}
+
+.TransCompanyEmblem{
+
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 10px;
+	width: 110px;
+	height: 110px;
+	margin-bottom: 5px;
+
+}

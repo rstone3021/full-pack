@@ -1,0 +1,1 @@
+Шпаргалка (методичка) CSS свойства background: http://fls.guru/cssbackground.html
